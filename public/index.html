@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavingChat - AI貯金計画アシスタント</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4A90E2">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>💰 SavingChat</h1>
+            <p>AIと一緒に貯金計画を立てよう</p>
+        </header>
+
+        <main class="main-content">
+            <div class="goals-section" id="goalsSection">
+                <h2>🎯 あなたの貯金目標</h2>
+                <div class="goals-list" id="goalsList">
+                    <div class="no-goals">
+                        <p>まだ目標が設定されていません</p>
+                        <p>チャットで目標を相談してみましょう！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-section">
+                <h2>💬 AIアシスタントに相談</h2>
+                <div class="chat-container" id="chatContainer">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai-message">
+                            <div class="message-content">
+                                <p>こんにちは！貯金計画のお手伝いをさせていただきます。</p>
+                                <p>どのような目標で貯金をお考えですか？</p>
+                                <small>例：車の購入、旅行、結婚資金、緊急時の備えなど</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" placeholder="メッセージを入力してください..." maxlength="500">
+                        <button id="sendButton">送信</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="quick-actions">
+            <button class="action-btn" onclick="quickStart('車')">🚗 車の購入</button>
+            <button class="action-btn" onclick="quickStart('旅行')">✈️ 旅行</button>
+            <button class="action-btn" onclick="quickStart('結婚')">💍 結婚資金</button>
+            <button class="action-btn" onclick="quickStart('緊急時')">🛡️ 緊急時の備え</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

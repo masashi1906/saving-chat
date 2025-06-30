@@ -1,0 +1,18 @@
+{
+  "name": "saving-chat",
+  "version": "1.0.0",
+  "description": "AIとのチャット形式で貯金計画を立て、進捗管理を行うWebアプリケーション",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "ide": "echo 'Starting development environment...' && node server.js"
+  },
+  "keywords": ["savings", "chat", "ai", "financial", "planning"],
+  "author": "masashi1906",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
